@@ -1,11 +1,10 @@
 package  com.company;
 
-
-import java.util.Arrays;
-import java.util.List;
-import java.util.Random;
-import java.util.concurrent.ThreadLocalRandom;
-
+void printArray(int[] arr){
+    for (int num: arr[i]){
+        System.out.print(num+", ");
+    }
+}
 public  class Main {
 
 
@@ -39,17 +38,14 @@ public  class Main {
                     //System.out.println(numbers[i]+" is not on activity");
                 }
             }
+            printArray(numbers[]);
             if(isFound){
-                for (int num:numbers[i]){
-                    System.out.print(num+", ");
-                }
+            
                 System.out.print(" is on activity");
                 System.out.println(" ,sum is "+finalSum);
                 System.out.println("sq sum is "+finalSquare);
             }else{
-                for (int num:numbers[i]){
-                    System.out.print(num+ ", ");
-                }
+
                 System.out.print(" is not on activity");
                 System.out.println();
                 System.out.println();
